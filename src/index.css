@@ -1,13 +1,27 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    /*убирает стандартные внешние отступы, которые браузеры добавляют по умолчанию*/
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    margin: 0;
+  
+    /* опр основной шрифт для всего документа, используя системные шрифты разных платформ
+       брауз будет брать  доступный шрифт из списка: */
+    font-family: 
+      -apple-system,       /* Apple (San Francisco) */
+      BlinkMacSystemFont,  /*  Chrome на macOS */
+      'Segoe UI',         /*   Windows */
+      'Roboto',           /*   Android */
+      'Oxygen',           /*   KDE/Linux */
+      'Ubuntu',           /*   Ubuntu */
+      'Cantarell',        /*   GNOME */
+      'Fira Sans',        /*  Firefox OS */
+      'Droid Sans',       /*   Android */
+      'Helvetica Neue',   /*    macOS */
+      sans-serif;         /*  fallback шрифт без засечек */
+  
+    /* улучает рендеринг шрифтов в WebKit-браузерах (Chrome, Safari) на Retina-дисплеях */
+    -webkit-font-smoothing: antialiased;
+  
+    /* подобное свойство для Firefox на macOS.
+       оптимизир отображение текста на экранах с высокой плотностью пикселей */
+    -moz-osx-font-smoothing: grayscale;
+  }

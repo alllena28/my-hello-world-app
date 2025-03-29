@@ -1,15 +1,11 @@
-import React from 'react';
-import Button from './components/Button';
-import Navigation from './components/Navigation';
+import AuthApp from './components/AuthApp';
 
-const App = () => {
-    return (
-        <div>
-            <Navigation />
-            <h1>Hello World</h1>
-            <Button />
-        </div>
-    );
-};
+function App() {
+  return (
+    <div className="App">
+      <AuthApp />
+    </div>
+  );
+}
 
 export default App;
