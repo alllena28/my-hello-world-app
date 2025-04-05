@@ -1,0 +1,72 @@
+/* Контейнер для счетчика */
+.counter-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 2rem; 
+    border-radius: 15px; /* Скругление углов */
+    max-width: 400px; /* Максимальная ширина */
+    margin: 2rem auto; /* Центрирование по горизонтали */
+    transition: all 0.3s ease; /* Плавный переход */
+  }
+  
+  /* Светлая тема */
+  .light .counter-container {
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /*  тень */
+    color: #333; /* цвет текста */
+  }
+  
+  /* Темная тема */
+  .dark .counter-container {
+    background-color: #343a40; /* темн фон */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*  выраженная тень */
+    color: #f8f9fa; /* цвет текста */
+  }
+  
+  /* Отображение счетчика */
+  .counter-display {
+    font-size: 3rem; 
+    margin: 1rem 0; 
+    font-weight: bold; 
+  }
+  
+  /* Контейнер для кнопок */
+  .counter-buttons {
+    display: flex; /* Flexbox для кнопок */
+    gap: 1rem; /* промеж между кнопками */
+  }
+  
+  /* Стили для кнопок */
+  .counter-buttons button {
+    padding: 0.5rem 1rem; /* внутр отступы */
+    font-size: 1rem; 
+    border: none; /* нет рамки */
+    border-radius: 5px; /* скруг углов */
+    cursor: pointer; /* указ при наведении */
+    transition: all 0.2s ease; /* плав переход */
+  }
+  
+  /* Кнопки в светлой теме */
+  .light .counter-buttons button {
+    background-color: #e9ecef; /* свет фон */
+    color: #495057; /* цвет текста */
+  }
+  
+  /* Кнопки в темной теме */
+  .dark .counter-buttons button {
+    background-color: #495057; /* тем фон */
+    color: #e9ecef; /* цвет текста в темной теме */
+  }
+  
+  /* Эффект при наведении на кнопку */
+  .counter-buttons button:hover {
+    transform: translateY(-2px); /* Подъем при наведении */
+  }
+  
+  /* Эффект при нажатии на кнопку */
+  .counter-buttons button:active {
+    transform: translateY(0); /* обрат в исходное положение при нажатии */
+  }
+  

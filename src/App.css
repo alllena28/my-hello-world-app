@@ -1,36 +1,20 @@
-/* основна приложения */
 .app {
-    max-width: 600px;        /* макс ширина контейнера */
-    margin: 0 auto;          /* центрир по горизонтали */
-    padding: 20px;           /* внутрин отступы */
-    font-family: Arial, sans-serif; /* шрифт */
-    text-align: center;      /* выравнив текста по центру */
-}
-
-/* стиль для сост загрузки */
-.loading {
-    text-align: center;      /* центрир текста */
-    font-size: 24px;        /* размер шрифта */
-    margin-top: 50px;       /* отступ сверху */
-}
-
-/* стиль форм */
-.form {
-    background-color: #f5f5f5; /*  фон */
-    padding: 20px;           /* внутр отступы */
-    border-radius: 8px;      /* скруг углов */
-    margin-bottom: 30px;     /* отступ снизу */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* тень формы */
-}
-
-/*  элементы формы */
-.form-group {
-    margin-bottom: 15px;     /* отступ между группами */
-    text-align: left;        /* выравнив содержимого по левому краю */
-}
-
-/* стиль подписей */
-.form-group label {
-    display: block;          /*  отображение на всю ширину */
-    margin-bottom: 5px;      /* отступ снизу */
-    font-weight: bold;      /* шрифт шрифт */
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .light {
+    background-color: #ffffff;
+    color: #212529;
+  }
+  
+  .dark {
+    background-color: #212529;
+    color: #f8f9fa;
+  }
+  
+  .content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
